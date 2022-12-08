@@ -8,3 +8,16 @@
 - compile time detection error : For instance, we have one string varibale. In the next code in case we change the value to integer, then compiler will consider as an error
 - OOP friendly : it recognize interface, inheritance, instance object etc
 - Superset of javascript : it means the way (method) that can be written in javascript, it's also able to be written in typescript
+
+# CHAPTER 2 - COMPONENT & MODULE
+1. Component : UI block that build a angular application such as login component, menu component, sidebar component etc. Component consist of component files like css, html, typescript and unit test. Typescript component will manage / link all of component files
+
+2. Selector component : unique identity having by each component. It will be called on html file in order to change the component with other component
+
+3. Module : Group of components, directives, pipes, services that relate to the application
+
+4. How angular works :
+- Once URL is typed on the browser, then it will redirect to index.htm (single page apps)
+- index.html will call main.ts
+- call app.Module.ts
+- th last one is calling aap.Component.ts
