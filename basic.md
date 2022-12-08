@@ -47,3 +47,22 @@
 - it likes click event, keyboard event etc. Once user click button then data will be passed from view to component
 
 5. Two Way Binding : Once user change data in view, then view will pass to component, then component will pass back to display in view at the same time. It like combination of property and event binding. In order to use two way binding we need import FormsModule in app.module.ts
+
+# CHAPTER 4 - DIRECTIVE
+1. Directive : is class that will add behaviour to elements in application. There are several types of directives sucs as structural (ngIf, ngFor, ngSwitch), attibute directive (ngClass, ngStyle), component directive
+
+2. Structural directive can add or remove element in DOM. Attribute directive can change appearance or behavior of element
+
+3. Different of them
+
+- Directive Component : by default this will be exists. It starts with "@" sign. The following code points to directive component
+```
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+```
+
+- Structural Directive : it will manipulate (add / remove) DOM. It starts with "*"
+- Attribute Directive : it will manipulate appearance of element. It between square brackets "[]"
