@@ -21,3 +21,29 @@
 - index.html will call main.ts
 - call app.Module.ts
 - th last one is calling aap.Component.ts
+
+# CHAPTER 3 - DATA BINDING
+1. Data binding is way to communicate between typescript/component (.ts) and view/template (.html) in the component. We have 3 ways of communication
+
+#### Output Data : Passing data from typescript to view 
+- string interpolation {{ data }}
+- property binding [property] = "data"
+
+#### Input Data : Passing data from view to typescript
+- event binding (event)="expression" . Expression like a javascript function
+
+#### Output Input (Both ways)
+- Two way binding [("ngModel")]="data"
+
+2. String Interpolation
+- using double curly braches {{}}
+- only work for string value
+
+3. Property Binding
+- superset of interpolation, it means something can be done by interpolation also can be done by property binding
+- able to receive non-string value
+
+4. Event Binding
+- it likes click event, keyboard event etc. Once user click button then data will be passed from view to component
+
+5. Two Way Binding : Once user change data in view, then view will pass to component, then component will pass back to display in view at the same time. It like combination of property and event binding. In order to use two way binding we need import FormsModule in app.module.ts
